@@ -1,0 +1,21 @@
+[08:30:08.365] [INFO] storybook v10.2.6
+[08:30:08.618] [DEBUG] Getting package.json info for /Users/matejhrescak/src/draftboard/package.json...
+[08:30:09.621] [DEBUG] Serving static files from node_modules/@chromatic-com/storybook/assets at /addon-visual-tests-assets
+[08:30:09.621] [DEBUG] Serving static files from public at /
+[08:30:09.621] [INFO] Starting...
+[08:30:09.965] [DEBUG] Starting preview..
+[08:30:10.081] [DEBUG] Using tsconfig paths for react-docgen
+[08:30:10.113] [ERROR] Failed to build the preview
+[08:30:10.115] [ERROR] [38;2;241;97;97mReferenceError: __dirname is not defined[39m
+    at Object.viteFinal (file://./.storybook/main.ts:22:25)
+    at file://./node_modules/storybook/dist/_node-chunks/chunk-7TARJQRJ.js:10114:36
+    at async createViteServer (file://./node_modules/@storybook/builder-vite/dist/index.js:1898:21)
+    at async Module.start (file://./node_modules/@storybook/builder-vite/dist/index.js:1923:17)
+    at async storybookDevServer (file://./node_modules/storybook/dist/core-server/index.js:7207:83)
+    at async buildOrThrow (file://./node_modules/storybook/dist/core-server/index.js:4504:12)
+    at async buildDevStandalone (file://./node_modules/storybook/dist/core-server/index.js:7577:66)
+    at async withTelemetry (file://./node_modules/storybook/dist/_node-chunks/chunk-AYHC7DAM.js:218:12)
+    at async dev (file://./node_modules/storybook/dist/bin/core.js:2734:3)
+    at async _Command.<anonymous> (file://./node_modules/storybook/dist/bin/core.js:2801:92)
+[08:30:10.118] [WARN] Broken build, fix the error above.
+You may need to refresh the browser.

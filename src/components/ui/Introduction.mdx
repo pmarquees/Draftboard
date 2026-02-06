@@ -1,0 +1,79 @@
+{/* @jsxImportSource react */}
+import { Meta } from '@storybook/addon-docs';
+
+<Meta title="Introduction" />
+
+# Draftboard Design System
+
+Welcome to the Draftboard component library. This Storybook documents all reusable UI components used throughout the application.
+
+## Overview
+
+Draftboard uses a modern stack built on:
+
+- **React 19** with Next.js 15
+- **Tailwind CSS v4** for styling
+- **Radix UI** for accessible primitives
+- **Class Variance Authority (CVA)** for component variants
+- **Lucide React** for icons
+
+## Component Categories
+
+### Foundation
+- **[Design Tokens](/docs/foundation-design-tokens--docs)** - Colors, typography, spacing, and radius tokens
+
+### Data Display
+- **[Avatar](/docs/ui-avatar--docs)** - User profile images with fallback initials
+- **[Badge](/docs/ui-badge--docs)** - Status indicators and labels
+- **[Card](/docs/ui-card--docs)** - Container for grouped content
+- **[Skeleton](/docs/ui-skeleton--docs)** - Loading placeholder
+
+### Inputs
+- **[Button](/docs/ui-button--docs)** - Actions and form submission
+- **[Input](/docs/ui-input--docs)** - Text input field
+- **[Textarea](/docs/ui-textarea--docs)** - Multi-line text input
+- **[Label](/docs/ui-label--docs)** - Form field labels
+- **[Switch](/docs/ui-switch--docs)** - Toggle control
+
+### Overlays
+- **[Dialog](/docs/ui-dialog--docs)** - Modal dialogs
+- **[Dropdown Menu](/docs/ui-dropdownmenu--docs)** - Context menus
+- **[Popover](/docs/ui-popover--docs)** - Floating content
+- **[Tooltip](/docs/ui-tooltip--docs)** - Contextual hints
+- **[Toast](/docs/ui-toast--docs)** - Notifications
+
+### Navigation
+- **[Tabs](/docs/ui-tabs--docs)** - Content switching
+- **[Command](/docs/ui-command--docs)** - Command palette / search
+
+### Brand
+- **[Logo](/docs/ui-logo--docs)** - Draftboard logo
+
+## Usage Guidelines
+
+### Import Pattern
+
+All UI components should be imported from `~/components/ui/`:
+
+```tsx
+import { Button } from "~/components/ui/button";
+import { Card, CardHeader, CardTitle, CardContent } from "~/components/ui/card";
+```
+
+### Class Merging
+
+Use the `cn()` utility for conditional class merging:
+
+```tsx
+import { cn } from "~/lib/utils";
+
+<Button className={cn("custom-class", isActive && "active")} />
+```
+
+### Accessibility
+
+All components are built on Radix UI primitives, ensuring:
+- Full keyboard navigation
+- Screen reader support
+- Focus management
+- ARIA attributes
